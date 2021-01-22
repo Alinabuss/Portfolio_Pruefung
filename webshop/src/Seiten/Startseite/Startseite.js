@@ -1,6 +1,6 @@
 import React from 'react';
 import './Startseite.css';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 class Startseite extends React.Component {
     render() {
@@ -8,6 +8,8 @@ class Startseite extends React.Component {
           <div className="Startseite">
               <h1>Startseite</h1>
               <p>Test</p>
+              <p><NavLink to="/Warenkorbseite">Warenkorb ansehen</NavLink></p>
+              <p><NavLink to="/Warenkorbseite">Zum Warenkorb hinzufügen</NavLink></p>
           </div>
         );
     }

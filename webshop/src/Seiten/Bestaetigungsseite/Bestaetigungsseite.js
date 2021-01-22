@@ -1,6 +1,6 @@
 import React from 'react';
 import './Bestaetigungsseite.css';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 class Bestaetigungsseite extends React.Component {
     render() {
@@ -8,6 +8,7 @@ class Bestaetigungsseite extends React.Component {
             <div className="Bestaetigungsseite">
                 <h1>Bestaetigungsseite</h1>
                 <p>Test</p>
+                <p><NavLink to="/">Zur Startseite zurückkehren</NavLink></p>
             </div>
           );
     }
