@@ -9,12 +9,6 @@ import Warenkorbseite from './Seiten/Warenkorbseite/Warenkorbseite'
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h1>Produktseite</h1>
-    //     <p>Test</p>
-    //   </header>
-    // </div>
     <Router>
       <Route path='/' exact component = {Startseite}/>
       <Route path='/Warenkorbseite' exact component = {Warenkorbseite}/>
