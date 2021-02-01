@@ -1,7 +1,7 @@
 .grid-container_Start {
     display: grid;
     grid-template-columns: 90vw 10vw;
-    grid-template-rows: 15vh 15vh  30vh;
+    grid-template-rows: 15vh 10vh  30vh;
     gap: 0px 5px;
     grid-template-areas:
       "Überschrift Button"

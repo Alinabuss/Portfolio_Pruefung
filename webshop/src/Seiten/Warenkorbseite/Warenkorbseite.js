@@ -71,9 +71,5 @@ class Warenkorbseite extends React.Component {
     }
 }
 
-{/* <h1>Warenkorbseite</h1>
-<p>Test</p>
-<p></p>
-<p></p> */}
 
 export default Warenkorbseite;
