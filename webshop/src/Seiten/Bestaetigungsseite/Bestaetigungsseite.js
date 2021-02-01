@@ -12,7 +12,7 @@ class Bestaetigungsseite extends React.Component {
                         <h1>Transaktion erfolgreich!</h1>
                     </div>
                     <div class="Feuerwerk_Bestaetigung">
-                        <img src="/Bilder/Feuerwerk.png" alt=""/>
+                        <img src="/Bilder/Wein.png" alt=""/>
                     </div>
                     <div class="Button_Bestaetigung">
                         <NavLink to="/"><button class="button button_bestaetigung">Zur Startseite zurückkehren</button></NavLink>

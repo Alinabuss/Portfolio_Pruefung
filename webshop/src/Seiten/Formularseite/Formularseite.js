@@ -17,14 +17,22 @@ class Formularseite extends React.Component {
                     <div class="Datenübersicht_Formular"><h2>Persönliche Daten</h2></div>
 
                     <div class="Daten_Formular">
-                      <div class="item">Bezeichnung</div>
+                      <div class="item">Name:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
+                      <div class="item">Vorname:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
+                      <div class="item">Adresse:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
+                      <div class="item">Telefonnumer:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
+                      <div class="item">Zahlungsmittel:</div>
                       <div class="item">Button</div>
-                      <div class="item">Bezeichnung</div>
-                      <div class="item">Button</div>
-                      <div class="item">Bezeichnung</div>
-                      <div class="item">Button</div>
-                      <div class="item">Bezeichnung</div>
-                      <div class="item">Button</div>
+                      <div class="item">Karteninhaber:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
+                      <div class="item">IBAN:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
+                      <div class="item">BIC:</div>
+                      <div class="item"><input type="text" size="80"></input></div>
                     </div>
 
                     <div class="Preise_Formular">

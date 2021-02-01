@@ -17,18 +17,25 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: 10px;
 }
 
 .Beschreibung_Start {
     background: beige; 
     grid-area: Beschreibung; 
     text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .Button_Start { 
     background:grey;
     grid-area: Button;
     text-align: center;
+    margin: 10px;
 }
 
 
@@ -41,6 +48,7 @@
   grid-row-end: 4;
   grid-gap: 10px;
   height: 30vh;
+  padding-top: 30px;
   grid-template-columns: repeat(auto-fill)
 }
 
@@ -50,6 +58,7 @@
     height: 100%;
     grid-gap: 5px;
     grid-template-columns: 30vw 70vw;
+    margin: 20px;
   }
 
 .PB_Start {

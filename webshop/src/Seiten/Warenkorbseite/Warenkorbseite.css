@@ -1,7 +1,7 @@
 .grid-container_Warenkorb {
     background: beige;
     display: grid;
-    grid-template-columns: 66vw 24vw 10vw;
+    grid-template-columns: 63.35vw 26.65vw 10vw;
     grid-template-rows: 10vh 10vh 80vh;
     gap: 0px 5px;
     grid-template-areas:
@@ -16,6 +16,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: 10px;
 }
 
 
@@ -23,12 +24,14 @@
     background:grey;
     grid-area: Button;
     text-align: center;
+    margin: 10px;
 }
 
 .Produktübersicht_Warenkorb { 
     width: 100.5vw;
     background: beige;
     grid-area: Produktübersicht;
+    margin: 20px;
 }
 
 
@@ -41,6 +44,7 @@
   grid-row-end: 4;
   grid-gap: 10px;
   height: 30vh;
+  margin: 20px;
   grid-template-columns: repeat(auto-fill)
 }
 
@@ -70,6 +74,13 @@
 .Preise_Warenkorb {
     background: beige;  
     grid-area: Preise; 
+    height: 600px;
+    margin: 20px;
+    padding-left: 45px;
+    border-left-style: solid;
+    border-color: gray;
+    border-width: 5px;
+    
 }
 
 

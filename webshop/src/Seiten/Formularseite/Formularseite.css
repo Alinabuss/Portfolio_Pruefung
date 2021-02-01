@@ -16,6 +16,7 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2; 
+    margin: 10px;
 }
 
 
@@ -23,11 +24,14 @@
     background:grey;
     grid-area: Button;
     text-align: center;
+    margin: 10px;
 }
 
 .Datenübersicht_Formular { 
     background: beige;
     grid-area: Produktübersicht;
+    margin: 20px;
+    
 }
 
 
@@ -41,6 +45,12 @@
     grid-row-end: 4;
     height: 60vh;
     grid-gap: 5px;
+    margin: 20px;
+    padding-left: 30px;
+    font-size: 20px;
+    border-right-style: solid;
+    border-color: gray;
+    border-width: 5px;
     grid-template-columns: 20vw 45vw;
   }
 
@@ -48,4 +58,5 @@
 .Preise_Formular {
     background: beige;  
     grid-area: Preise; 
+    margin: 20px;
 }

@@ -15,6 +15,7 @@
     background: grey;  
     text-align: center;
     grid-area: Überschrift; 
+    margin: 10px;
 }
 
 .Feuerwerk_Bestaetigung {
@@ -38,5 +39,5 @@
 }
 
 img {
-    height: 550px;
+    height: 600px;
 }
