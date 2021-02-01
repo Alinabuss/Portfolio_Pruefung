@@ -13,7 +13,10 @@
 .Überschrift_Start {
     background: grey;  
     text-align: center;
-    grid-area: Überschrift; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .Beschreibung_Start {
@@ -21,7 +24,6 @@
     grid-area: Beschreibung; 
     text-align: center;
 }
-
 
 .Button_Start { 
     background:grey;
@@ -64,3 +66,4 @@
     grid-gap: 5px;
     grid-template-columns: 20vw 15vw 25vw;
 }
+

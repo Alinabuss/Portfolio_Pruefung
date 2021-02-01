@@ -1,5 +1,6 @@
 import React from 'react';
 import './Warenkorbseite.css';
+import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 class Warenkorbseite extends React.Component {
@@ -11,7 +12,7 @@ class Warenkorbseite extends React.Component {
                       <h1>Ihr Warenkorb</h1>
                     </div>
                     <div class="Button_Warenkorb">
-                        <NavLink to="/">Weiter shoppen</NavLink>
+                        <NavLink to="/"><button class="button button_Überschrift">Weiter shoppen</button></NavLink>
                     </div>
                     <div class="Produktübersicht_Warenkorb"><h2>Produktübersicht</h2></div>
 
@@ -24,7 +25,7 @@ class Warenkorbseite extends React.Component {
                           <div class="item Menge_Warenkorb">
                             <div class="item">Menge:</div>
                             <div class="item">Auswahl</div>
-                            <div class="item">X</div>
+                            <div class="item"><button class="button_X">X</button></div>
                           </div>
                         </div>
                       </div>
@@ -37,7 +38,7 @@ class Warenkorbseite extends React.Component {
                           <div class="item Menge_Warenkorb">
                           <div class="item">Menge:</div>
                             <div class="item">Auswahl</div>
-                            <div class="item">X</div>
+                            <div class="item"><button class="button_X">X</button></div>
                           </div>
                         </div>
                       </div>
@@ -50,7 +51,7 @@ class Warenkorbseite extends React.Component {
                           <div class="item Menge_Warenkorb">
                           <div class="item">Menge:</div>
                             <div class="item">Auswahl</div>
-                            <div class="item">X</div>
+                            <div class="item"><button class="button_X">X</button></div>
                           </div>
                         </div>
                       </div>
@@ -63,7 +64,7 @@ class Warenkorbseite extends React.Component {
                         <div class="item">Preis3</div>
                         <div class="item">Gesamtpreis</div>
                         <div class="item">
-                        <NavLink to="/Formularseite">Jetzt bezahlen</NavLink>
+                        <NavLink to="/Formularseite"><button class="button_Standard">Jetzt bezahlen</button></NavLink>
                         </div>
                     </div>
 

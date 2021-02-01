@@ -1,5 +1,6 @@
 import React from 'react';
 import './Bestaetigungsseite.css';
+import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 class Bestaetigungsseite extends React.Component {
@@ -14,7 +15,7 @@ class Bestaetigungsseite extends React.Component {
                         <img src="/Bilder/Feuerwerk.png" alt=""/>
                     </div>
                     <div class="Button_Bestaetigung">
-                        <NavLink to="/"><button>Zur Startseite zurückkehren</button></NavLink>
+                        <NavLink to="/"><button class="button button_bestaetigung">Zur Startseite zurückkehren</button></NavLink>
                     </div>
                 </div>
             </div>

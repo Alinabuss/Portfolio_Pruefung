@@ -1,5 +1,6 @@
 import React from 'react';
 import './Formularseite.css';
+import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 class Formularseite extends React.Component {
@@ -11,7 +12,7 @@ class Formularseite extends React.Component {
                       <h1>Formularübertragung</h1>
                     </div>
                     <div class="Button_Formular">
-                      <NavLink to="/Warenkorbseite">Abbrechen</NavLink>
+                      <NavLink to="/Warenkorbseite"><button class="button button_Überschrift">Abbrechen</button></NavLink>
                     </div>
                     <div class="Datenübersicht_Formular"><h2>Persönliche Daten</h2></div>
 
@@ -33,7 +34,7 @@ class Formularseite extends React.Component {
                         <div class="item">Preis3</div>
                         <div class="item">Gesamtpreis</div>
                         <div class="item">
-                          <NavLink to="/Bestaetigungsseite">Jetzt kaufen</NavLink>
+                          <NavLink to="/Bestaetigungsseite"><button class="button_Standard">Jetzt kaufen</button></NavLink>
                         </div>
                     </div>
 

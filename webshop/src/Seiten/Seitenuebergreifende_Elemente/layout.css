@@ -1,0 +1,11 @@
+.button_Überschrift {
+    font-size: 20px;
+    background: grey;
+    width: 8vw;
+}
+
+.button_Standard {
+    font-size: 17px;
+    background: grey;
+    width: 15vw;
+}

@@ -1,6 +1,7 @@
 .grid-container_Bestaetigung {
     background: beige;
     display: grid;
+    width: 100.5vw;
     grid-template-columns: 20vw 60vw 20vw;
     grid-template-rows: 10vh 65vh 10vh 15vh ;
     gap: 0px 5px;
@@ -29,7 +30,7 @@
     font-size: 50px;
 }
 
-button{
+.button_bestaetigung{
     width: 70vh;
     height: 7vh;
     background: grey;

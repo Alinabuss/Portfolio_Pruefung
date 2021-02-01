@@ -12,7 +12,10 @@
 .Überschrift_Warenkorb {
     background: grey;  
     text-align: center;
-    grid-area: Überschrift; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 
@@ -67,4 +70,11 @@
 .Preise_Warenkorb {
     background: beige;  
     grid-area: Preise; 
+}
+
+
+.button_X {
+    font-size: 15px;
+    background: grey;
+    width: 2vw;
 }

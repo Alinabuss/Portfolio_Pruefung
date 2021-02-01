@@ -1,5 +1,6 @@
 import React from 'react';
 import './Startseite.css';
+import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 class Startseite extends React.Component {
@@ -12,7 +13,7 @@ class Startseite extends React.Component {
                     </div>
 
                     <div class="Button_Start">
-                      <NavLink to="/Warenkorbseite">Warenkorb ansehen</NavLink>
+                      <NavLink to="/Warenkorbseite"><button class="button button_Überschrift">Warenkorb ansehen</button></NavLink>
                     </div>
                     <div class="Beschreibung_Start">Beschreibung</div>
   
@@ -26,7 +27,7 @@ class Startseite extends React.Component {
                             <div class="item">Menge:</div>
                             <div class="item">Auswahl</div>
                             <div class="item">
-                            <NavLink to="/Warenkorbseite">Zum Warenkorb hinzufügen</NavLink>
+                            <NavLink to="/Warenkorbseite"><button class="button_Standard">Zum Warenkorb hinzufügen</button></NavLink>
                             </div>
                           </div>
                         </div>
@@ -41,7 +42,7 @@ class Startseite extends React.Component {
                           <div class="item">Menge:</div>
                             <div class="item">Auswahl</div>
                             <div class="item">
-                            <NavLink to="/Warenkorbseite">Zum Warenkorb hinzufügen</NavLink>
+                            <NavLink to="/Warenkorbseite"><button class="button_Standard">Zum Warenkorb hinzufügen</button></NavLink>
                             </div>
                           </div>
                         </div>
@@ -56,7 +57,7 @@ class Startseite extends React.Component {
                           <div class="item">Menge:</div>
                             <div class="item">Auswahl</div>
                             <div class="item">
-                            <NavLink to="/Warenkorbseite">Zum Warenkorb hinzufügen</NavLink>
+                            <NavLink to="/Warenkorbseite"><button class="button_Standard">Zum Warenkorb hinzufügen</button></NavLink>
                             </div>
                           </div>
                         </div>
