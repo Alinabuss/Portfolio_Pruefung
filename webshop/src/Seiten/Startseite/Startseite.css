@@ -1,7 +1,8 @@
 .grid-container_Start {
+    background: beige;
     display: grid;
     grid-template-columns: 90vw 10vw;
-    grid-template-rows: 15vh 10vh  30vh;
+    grid-template-rows: 15vh 10vh 75vh;
     gap: 0px 5px;
     grid-template-areas:
       "Überschrift Button"
@@ -9,36 +10,37 @@
       ". .";
   }
 .Überschrift_Start {
-    background: red;  
+    background: grey;  
     grid-area: Überschrift; 
 }
 
 .Beschreibung_Start {
-    background: blue; 
+    background: beige; 
     grid-area: Beschreibung; 
 }
 
 
 .Button_Start { 
-    background:white;
+    background:grey;
     grid-area: Button;
 }
 
 
 .Produkte_Start {
-  background: tomato;
+  background: beige;
   display: grid;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-gap: 10px;
+  height: 30vh;
   grid-template-columns: repeat(auto-fill)
 }
 
 .Bild_Start {
     display: grid;
-    background:turquoise;
+    background:beige;
     height: 100%;
     grid-gap: 5px;
     grid-template-columns: 30vw 70vw;
@@ -46,14 +48,14 @@
 
 .PB_Start {
     display: grid;
-    background: yellow;
+    background: beige;
     height: 100%;
     grid-gap: 5px;
 }
 
 .Menge_Start {
     display: grid;
-    background: red;
+    background: beige;
     height: 100%;
     grid-gap: 5px;
     grid-template-columns: 20vw 15vw 25vw;

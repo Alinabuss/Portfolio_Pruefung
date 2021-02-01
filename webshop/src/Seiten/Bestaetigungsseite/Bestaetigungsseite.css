@@ -1,24 +1,26 @@
 .grid-container_Bestaetigung {
+    background: beige;
     display: grid;
     grid-template-columns: 20vw 60vw 20vw;
-    grid-template-rows: 15vh 60vh 15vh ;
+    grid-template-rows: 15vh 60vh 10vh 15vh ;
     gap: 0px 5px;
     grid-template-areas:
       "Überschrift Überschrift Überschrift"
       ". Feuerwerk ."
-      ". Button .";
+      ". Button ."
+      ". . .";
   }
 .Überschrift_Bestaetigung {
-    background: red;  
+    background: grey;  
     grid-area: Überschrift; 
 }
 
 .Feuerwerk_Bestaetigung {
-    background: blue; 
+    background: beige; 
     grid-area: Feuerwerk; 
 }
 
 .Button_Bestaetigung { 
-    background: green;
+    background: grey;
     grid-area: Button
 }
