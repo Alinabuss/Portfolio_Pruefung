@@ -9,11 +9,8 @@ class Bestaetigungsseite extends React.Component {
                 <div class="grid-container_Bestaetigung">
                     <div class="Überschrift_Bestaetigung">Überschrift</div>
                     <div class="Feuerwerk_Bestaetigung">Feuerwerk</div>
-                    <div class="Button_Bestaetigung">Button</div>
+                    <div class="Button_Bestaetigung"><NavLink to="/">Zur Startseite zurückkehren</NavLink></div>
                 </div>
-                {/* <h1>Bestaetigungsseite</h1>
-                <p>Test</p>
-                <p><NavLink to="/">Zur Startseite zurückkehren</NavLink></p> */}
             </div>
           );
     }

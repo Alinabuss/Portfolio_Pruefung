@@ -1,0 +1,65 @@
+.grid-container_Warenkorb {
+    display: grid;
+    grid-template-columns: 66vw 24vw 10vw;
+    grid-template-rows: 15vh 15vh 30vh;
+    gap: 0px 5px;
+    grid-template-areas:
+      "Überschrift Überschrift Button"
+      "Produktübersicht . ."
+      ". Preise Preise";
+  }
+.Überschrift_Warenkorb {
+    background: red;  
+    grid-area: Überschrift; 
+}
+
+
+.Button_Warenkorb { 
+    background:white;
+    grid-area: Button;
+}
+
+.Produktübersicht_Warenkorb { 
+    background: blue;
+    grid-area: Produktübersicht;
+}
+
+
+.Produkte_Warenkorb {
+  background: tomato;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill)
+}
+
+.Bild_Warenkorb {
+    display: grid;
+    background:turquoise;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: 15vw 50vw;
+  }
+
+.PB_Warenkorb {
+    display: grid;
+    background: yellow;
+    height: 100%;
+    grid-gap: 5px;
+}
+
+.Menge_Warenkorb {
+    display: grid;
+    background: red;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: 20vw 20vw 10vw;
+}
+
+.Preise_Warenkorb {
+    background: violet;  
+    grid-area: Preise; 
+}
