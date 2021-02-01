@@ -1,4 +1,4 @@
-.grid-container {
+.grid-container_Bestaetigung {
     display: grid;
     grid-template-columns: 20vw 60vw 20vw;
     grid-template-rows: 15vh 60vh 15vh ;
@@ -8,17 +8,17 @@
       ". Feuerwerk ."
       ". Button .";
   }
-.Überschrift {
+.Überschrift_Bestaetigung {
     background: red;  
     grid-area: Überschrift; 
 }
 
-.Feuerwerk {
+.Feuerwerk_Bestaetigung {
     background: blue; 
     grid-area: Feuerwerk; 
 }
 
-.Button { 
+.Button_Bestaetigung { 
     background: green;
     grid-area: Button
 }
