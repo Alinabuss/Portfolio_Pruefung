@@ -1,8 +1,9 @@
 .grid-container_Start {
     background: beige;
     display: grid;
+    width: 100.5vw;
     grid-template-columns: 90vw 10vw;
-    grid-template-rows: 15vh 10vh 75vh;
+    grid-template-rows: 10vh 10vh 80vh;
     gap: 0px 5px;
     grid-template-areas:
       "Überschrift Button"
@@ -11,18 +12,21 @@
   }
 .Überschrift_Start {
     background: grey;  
+    text-align: center;
     grid-area: Überschrift; 
 }
 
 .Beschreibung_Start {
     background: beige; 
     grid-area: Beschreibung; 
+    text-align: center;
 }
 
 
 .Button_Start { 
     background:grey;
     grid-area: Button;
+    text-align: center;
 }
 
 
@@ -30,7 +34,7 @@
   background: beige;
   display: grid;
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
   grid-gap: 10px;

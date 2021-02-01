@@ -7,9 +7,15 @@ class Bestaetigungsseite extends React.Component {
         return (
             <div className="Bestaetigungsseite">
                 <div class="grid-container_Bestaetigung">
-                    <div class="Überschrift_Bestaetigung">Überschrift</div>
-                    <div class="Feuerwerk_Bestaetigung">Feuerwerk</div>
-                    <div class="Button_Bestaetigung"><NavLink to="/">Zur Startseite zurückkehren</NavLink></div>
+                    <div class="Überschrift_Bestaetigung">
+                        <h1>Transaktion erfolgreich!</h1>
+                    </div>
+                    <div class="Feuerwerk_Bestaetigung">
+                        <img src="/Bilder/Feuerwerk.png" alt=""/>
+                    </div>
+                    <div class="Button_Bestaetigung">
+                        <NavLink to="/"><button>Zur Startseite zurückkehren</button></NavLink>
+                    </div>
                 </div>
             </div>
           );

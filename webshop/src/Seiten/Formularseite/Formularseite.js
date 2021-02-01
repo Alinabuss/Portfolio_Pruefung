@@ -7,11 +7,13 @@ class Formularseite extends React.Component {
     return (
         <div className="Formularseite">
           <div class="grid-container_Formular">
-                    <div class="Überschrift_Formular">Überschrift</div>
+                    <div class="Überschrift_Formular">
+                      <h1>Formularübertragung</h1>
+                    </div>
                     <div class="Button_Formular">
                       <NavLink to="/Warenkorbseite">Abbrechen</NavLink>
                     </div>
-                    <div class="Datenübersicht_Formular">Persönliche Daten</div>
+                    <div class="Datenübersicht_Formular"><h2>Persönliche Daten</h2></div>
 
                     <div class="Daten_Formular">
                       <div class="item">Bezeichnung</div>
@@ -25,7 +27,7 @@ class Formularseite extends React.Component {
                     </div>
 
                     <div class="Preise_Formular">
-                        <div class="item">Preisübersicht</div>
+                        <div class="item"><h2>Preisübersicht</h2></div>
                         <div class="item">Preis1</div>
                         <div class="item">Preis2</div>
                         <div class="item">Preis3</div>

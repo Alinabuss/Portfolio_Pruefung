@@ -7,7 +7,10 @@ class Startseite extends React.Component {
       return (
           <div className="Startseite">
               <div class="grid-container_Start">
-                    <div class="Überschrift_Start">Überschrift</div>
+                    <div class="Überschrift_Start">
+                      <h1>Willkommen zu Gastrolandia</h1>
+                    </div>
+
                     <div class="Button_Start">
                       <NavLink to="/Warenkorbseite">Warenkorb ansehen</NavLink>
                     </div>

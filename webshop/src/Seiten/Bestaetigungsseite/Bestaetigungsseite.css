@@ -2,7 +2,7 @@
     background: beige;
     display: grid;
     grid-template-columns: 20vw 60vw 20vw;
-    grid-template-rows: 15vh 60vh 10vh 15vh ;
+    grid-template-rows: 10vh 65vh 10vh 15vh ;
     gap: 0px 5px;
     grid-template-areas:
       "Überschrift Überschrift Überschrift"
@@ -12,15 +12,30 @@
   }
 .Überschrift_Bestaetigung {
     background: grey;  
+    text-align: center;
     grid-area: Überschrift; 
 }
 
 .Feuerwerk_Bestaetigung {
     background: beige; 
     grid-area: Feuerwerk; 
+    text-align: center;
 }
 
 .Button_Bestaetigung { 
+    background: beige;
+    grid-area: Button;
+    text-align: center;
+    font-size: 50px;
+}
+
+button{
+    width: 70vh;
+    height: 7vh;
     background: grey;
-    grid-area: Button
+    font-size: 30px;
+}
+
+img {
+    height: 550px;
 }

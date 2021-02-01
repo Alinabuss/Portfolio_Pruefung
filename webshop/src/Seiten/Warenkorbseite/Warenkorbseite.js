@@ -7,11 +7,13 @@ class Warenkorbseite extends React.Component {
         return (
             <div className="Warenkorbseite">
                  <div class="grid-container_Warenkorb">
-                    <div class="Überschrift_Warenkorb">Überschrift</div>
+                    <div class="Überschrift_Warenkorb">
+                      <h1>Ihr Warenkorb</h1>
+                    </div>
                     <div class="Button_Warenkorb">
                         <NavLink to="/">Weiter shoppen</NavLink>
                     </div>
-                    <div class="Produktübersicht_Warenkorb">Produktübersicht</div>
+                    <div class="Produktübersicht_Warenkorb"><h2>Produktübersicht</h2></div>
 
                     <div class="Produkte_Warenkorb">
                       <div class="item Bild_Warenkorb">
@@ -55,7 +57,7 @@ class Warenkorbseite extends React.Component {
                     </div>
 
                     <div class="Preise_Warenkorb">
-                        <div class="item">Preisübersicht</div>
+                        <div class="item"><h2>Preisübersicht</h2></div>
                         <div class="item">Preis1</div>
                         <div class="item">Preis2</div>
                         <div class="item">Preis3</div>
