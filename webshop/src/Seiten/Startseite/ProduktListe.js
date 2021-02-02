@@ -1,14 +1,14 @@
-import Blanquette from "/Bilder/Blanquette_de_Limoux.jpg"
-import Blutsbruder from "/Bilder/Blutsbruder_Rot.png"
-import Grüner from "/Bilder/Grüner_Veltiner.jpg"
-import Horny from "/Bilder/Horny_Rose.jpg"
-import Krebs from "/Bilder/Krebs_weiss.jpg"
-import Seductrice from "/Bilder/La_Seductrice.png"
-import Libertin from "/Bilder/La_Libertin.jpg"
-import Luna from "/Bilder/Luna_et_Sole.png"
-import Porcheria from "/Bilder/Porcheria.jpg"
-import Urbulle from "/Bilder/Urbulle.jpg"
-import Burgunder from "/Bilder/Weisser_Burgunder.jpg"
+import Blanquette from "./Produktbilder/Blanquet_de_Limoux.jpg"
+import Blutsbruder from "./Produktbilder/Blutsbruder_Rot.png"
+import Grüner from "./Produktbilder/Grüner_Veltiner.jpg"
+import Horny from "./Produktbilder/Horny_Rose.jpg"
+import Krebs from "./Produktbilder/Krebs_weiss.jpg"
+import Seductrice from "./Produktbilder/La_Seductrice.png"
+import Libertin from "./Produktbilder/Le_Libertin.jpg"
+import Luna from "./Produktbilder/Luna_et_Sole.png"
+import Porcheria from "./Produktbilder/Porcheria.jpg"
+import Urbulle from "./Produktbilder/Urbulle.jpg"
+import Burgunder from "./Produktbilder/Weisser_Burgunder.jpg"
 
 
 
@@ -26,4 +26,4 @@ const ProduktListe = [
     {Titel: "LUNA ET SOLE", Beschreibung: "Luna ist der große Bruder vom schon bekannten Sole. Ein tiefgründiger Wein für die Abendstunden, der sich im Glas extrem entwickelt. Es lohnt sich, dem Wein einen Moment Zeit zu geben, bis er sich in vollster Pracht entfaltet. Luna et Sole lädt zu Gesprächen ein, passt zu Kerzenlicht und ist sogar der perfekte Begleiter fürs erste Date. Der Wein hat Aromen von frischen Brombeeren, schwarzer Johannisbeere, elegantem Kaffee und leichter Vanille - durch den Holzeinsatz. Kann jetzt wunderbar getrunken werden, aber auch erst in 2-3 Jahren.", Preis: 18 , Bild: Luna }
 ]
 
-export default ProdukListe
+export default ProduktListe
