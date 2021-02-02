@@ -1,7 +1,10 @@
 import React from 'react';
 import './Formularseite.css';
+import Datenformular from './Formularseite_Components.js';
 import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
+
+
 
 class Formularseite extends React.Component {
   render() {
@@ -16,25 +19,9 @@ class Formularseite extends React.Component {
                     </div>
                     <div class="Datenübersicht_Formular"><h2>Persönliche Daten</h2></div>
 
-                    <div class="Daten_Formular">
-                      <div class="item">Name:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                      <div class="item">Vorname:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                      <div class="item">Adresse:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                      <div class="item">Telefonnumer:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                      <div class="item">Zahlungsmittel:</div>
-                      <div class="item">Button</div>
-                      <div class="item">Karteninhaber:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                      <div class="item">IBAN:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                      <div class="item">BIC:</div>
-                      <div class="item"><input type="text" size="80"></input></div>
-                    </div>
-
+                    
+                    <Datenformular/>
+                    
                     <div class="Preise_Formular">
                         <div class="item"><h2>Preisübersicht</h2></div>
                         <div class="item">Preis1</div>

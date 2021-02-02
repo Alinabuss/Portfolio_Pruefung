@@ -24,7 +24,7 @@ class Warenkorbseite extends React.Component {
                           <div class="item">Beschreibung1</div>
                           <div class="item Menge_Warenkorb">
                             <div class="item">Menge:</div>
-                            <div class="item">Auswahl</div>
+                            <div class="item"><input type="number" min="1" max="100"/></div>
                             <div class="item"><button class="button_X">X</button></div>
                           </div>
                         </div>
@@ -37,7 +37,7 @@ class Warenkorbseite extends React.Component {
                           <div class="item">Beschreibung2</div>
                           <div class="item Menge_Warenkorb">
                           <div class="item">Menge:</div>
-                            <div class="item">Auswahl</div>
+                            <div class="item"><input type="number" min="1" max="100"/></div>
                             <div class="item"><button class="button_X">X</button></div>
                           </div>
                         </div>
@@ -50,7 +50,7 @@ class Warenkorbseite extends React.Component {
                           <div class="item">Beschreibung3</div>
                           <div class="item Menge_Warenkorb">
                           <div class="item">Menge:</div>
-                            <div class="item">Auswahl</div>
+                            <div class="item"><input type="number" min="1" max="100"/></div>
                             <div class="item"><button class="button_X">X</button></div>
                           </div>
                         </div>
