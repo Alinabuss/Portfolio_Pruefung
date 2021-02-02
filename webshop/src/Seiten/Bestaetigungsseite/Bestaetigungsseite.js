@@ -11,7 +11,7 @@ class Bestaetigungsseite extends React.Component {
                     <div class="Überschrift_Bestaetigung">
                         <h1>Transaktion erfolgreich!</h1>
                     </div>
-                    <div class="Feuerwerk_Bestaetigung">
+                    <div class="Wein_Bestaetigung">
                         <img src="/Bilder/Wein.png" alt=""/>
                     </div>
                     <div class="Button_Bestaetigung">

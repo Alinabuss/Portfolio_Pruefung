@@ -1,8 +1,11 @@
 import React from 'react';
 import './Formularseite.css';
-import Datenformular from './Formularseite_Components.js';
+import Datenformular from './Datenformular.js';
+import Dropdownformular from './Dropdownformular'
 import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
+import { render } from 'react-dom';
+
 
 
 
@@ -20,8 +23,14 @@ class Formularseite extends React.Component {
                     <div class="Datenübersicht_Formular"><h2>Persönliche Daten</h2></div>
 
                     
-                    <Datenformular/>
+                    <Datenformular Bezeichnungen={["Name","Text", "Vorname","Text", "Adresse","Text", "Telefonnummer","Text", 
+                    "Zahlungsmittel", ["Dropdown","Anfang", "Girokarte", "Kreditkarte", "Paypal", "Auf Rechnung", "Sofort-Überweisung"]]}/>
+                    <div class="Dropdown_Formular">
+                      {/* <Dropdownformular/> */}
+                      
+                    </div>
                     
+
                     <div class="Preise_Formular">
                         <div class="item"><h2>Preisübersicht</h2></div>
                         <div class="item">Preis1</div>
