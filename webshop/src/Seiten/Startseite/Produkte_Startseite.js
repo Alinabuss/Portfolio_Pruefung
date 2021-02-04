@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
 function Produkt_Func(key, Produkt, WarenkorbHinzufügen) {
     return(
+    <div key={Produkt.id}>
     <div class="item Bild_Start">
     <div class="item"><img class="image_start" src={Produkt.Bild} alt={Produkt.Titel} /> </div>
     <div class="item PB_Start">
@@ -20,7 +21,19 @@ function Produkt_Func(key, Produkt, WarenkorbHinzufügen) {
         </div>
     </div>
     </div>
+    </div>
     )
 }
 
-export default Produkt_Func
+class Produkte_Startseite extends React.Component {
+    render() { 
+        return(
+            <div class="Produkte_Start">
+            {this.props.ProduktListe.map(Produkt =>  Produkt_Func(Produkt.id, Produkt, this.props.WarenkorbHinzufügen))}
+            </div> 
+        )
+    }
+}
+
+
+export default Produkte_Startseite

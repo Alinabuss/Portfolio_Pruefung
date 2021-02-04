@@ -10,13 +10,10 @@
       "Beschreibung Beschreibung"
       ". .";
   }
-.Überschrift_Start {
-    background: grey;  
+.Button_Start { 
+    background:grey;
+    grid-area: Button;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
     margin: 10px;
 }
 
@@ -29,13 +26,6 @@
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.Button_Start { 
-    background:grey;
-    grid-area: Button;
-    text-align: center;
-    margin: 10px;
 }
 
 
@@ -77,6 +67,3 @@
     grid-template-columns: 5vw 5vw 10vw;
 }
 
-.image_start {
-    height: 300px;
-}

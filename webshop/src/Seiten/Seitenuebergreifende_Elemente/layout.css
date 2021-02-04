@@ -4,9 +4,59 @@
     width: 8vw;
 }
 
+
 .button_Standard {
     font-size: 17px;
     background: grey;
     width: 15vw;
 }
 
+.Überschrift {
+    background: grey;  
+    text-align: center;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end:2 ;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin: 10px;
+    width: 100vw;
+}
+
+.spacer {
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+
+
+  .Preisübersicht {
+    padding-top: 5vw;
+    background: beige;  
+    grid-area: Preisübersicht;
+    margin: 20px;
+    width: 15vw;
+    grid-template-columns: 12vw 7vw;
+}
+
+.Preise {
+  background: beige; 
+  display: grid; 
+    grid-area: Preise;
+    margin: 20px;
+    width: 15vw;
+    grid-template-columns: 12vw 7vw;
+
+}
+.Balken {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    border-right-style: solid;
+    border-color: gray;
+    border-width: 5px;
+}
+
+.image_start {
+    height: 300px;
+}

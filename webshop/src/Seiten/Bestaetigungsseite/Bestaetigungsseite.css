@@ -11,12 +11,7 @@
       ". Button ."
       ". . .";
   }
-.Überschrift_Bestaetigung {
-    background: grey;  
-    text-align: center;
-    grid-area: Überschrift; 
-    margin: 10px;
-}
+
 
 .Wein_Bestaetigung {
     background: beige; 

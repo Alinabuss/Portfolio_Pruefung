@@ -1,24 +1,16 @@
 .grid-container_Warenkorb {
     background: beige;
     display: grid;
-    grid-template-columns: 63.35vw 26.65vw 10vw;
-    grid-template-rows: 10vh 10vh 80vh;
+    grid-template-columns: 66vw 22vw 10vw;
+    grid-template-rows: 10vh 10vh 10vh 20vh 40vh;
     gap: 0px 5px;
     grid-template-areas:
-      "Überschrift Überschrift Button"
-      "Produktübersicht . ."
-      ". Preise Preise";
+    "Überschrift Überschrift Button"
+    "Produktübersicht  . ."
+    ". Preisübersicht ."
+    ". Preise Preise "
+    ". . .";
   }
-.Überschrift_Warenkorb {
-    background: grey;  
-    text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 10px;
-}
-
 
 .Button_Warenkorb { 
     background:grey;
@@ -28,7 +20,7 @@
 }
 
 .Produktübersicht_Warenkorb { 
-    width: 100.5vw;
+    width: 40vw;
     background: beige;
     grid-area: Produktübersicht;
     margin: 20px;
@@ -38,10 +30,8 @@
 .Produkte_Warenkorb {
   background: beige;
   display: grid;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-area: Produkte;
+  max-width: 40vw;
   grid-gap: 10px;
   height: 30vh;
   margin: 20px;
@@ -60,6 +50,7 @@
     display: grid;
     background: beige;
     height: 100%;
+    width: 40vw;
     grid-gap: 5px;
 }
 
@@ -68,30 +59,14 @@
     background: beige;
     height: 100%;
     grid-gap: 5px;
+    width: 40vw;
     grid-template-columns: 3vw 2vw 0.75vw 4vw 10vw;
 }
 
-.Preise_Warenkorb {
-    background: beige;  
-    grid-area: Preise; 
-    grid-gap: 5px;
-    height: 600px;
-    width: 15vw;
-    margin: 20px;
-    padding-left: 45px;
-    border-left-style: solid;
-    border-color: gray;
-    border-width: 5px;
-    
-}
 
 
 .button_X {
     font-size: 15px;
     background: grey;
     width: 2vw;
-}
-
-.spacer {
-    padding-top: 20px;
 }

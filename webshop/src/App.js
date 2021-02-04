@@ -7,7 +7,7 @@ import Formularseite from './Seiten/Formularseite/Formularseite'
 import Startseite from './Seiten/Startseite/Startseite'
 import Warenkorbseite from './Seiten/Warenkorbseite/Warenkorbseite'
 import ProduktListe from './Seiten/Startseite/ProduktListe';
-import Produkt_Func from './Seiten/Startseite/Produkte';
+
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     if (exist){
       setCartItems(
         cartItems.map((x) =>
-        x.id === Produkt.id ? { ...exist, qty: parseInt(exist.qty)+parseInt(Menge) } : x
+        x.id === Produkt.id ? { ...exist, qty: parseInt(exist.qty)+parseInt(Menge? Menge : 1) } : x
         )
       );
     } else {
