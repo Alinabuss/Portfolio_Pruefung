@@ -10,12 +10,12 @@ function Produkt_Func(key, Produkt, WarenkorbHinzufügen) {
     <div class="item PB_Start">
         <div class="item"><h2>{Produkt.Titel}</h2></div>
         <div class="item">{Produkt.Beschreibung}</div>
-        <div><h4>Preis: {Produkt.Preis}</h4></div>
+        <div><h4>Preis: {Produkt.Preis}€</h4></div>
         <div class="item Menge_Start">
         <div class="item">Menge:</div>
         <div class="item"><input type="number" id={Produkt.Titel} min="1" max="100" /></div>
         <div class="item">
-        <NavLink to="/Warenkorbseite"><button class="button_Standard" onClick={() => WarenkorbHinzufügen(Produkt)}>Zum Warenkorb hinzufügen</button></NavLink>
+        <button class="button_Standard" onClick={() => WarenkorbHinzufügen(Produkt)}>Zum Warenkorb hinzufügen</button>
         </div>
         </div>
     </div>

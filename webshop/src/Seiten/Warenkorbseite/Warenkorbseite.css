@@ -68,13 +68,15 @@
     background: beige;
     height: 100%;
     grid-gap: 5px;
-    grid-template-columns: 3vw 2vw 2vw 3vw 10vw;
+    grid-template-columns: 3vw 2vw 0.75vw 4vw 10vw;
 }
 
 .Preise_Warenkorb {
     background: beige;  
     grid-area: Preise; 
+    grid-gap: 5px;
     height: 600px;
+    width: 15vw;
     margin: 20px;
     padding-left: 45px;
     border-left-style: solid;
@@ -88,4 +90,8 @@
     font-size: 15px;
     background: grey;
     width: 2vw;
+}
+
+.spacer {
+    padding-top: 20px;
 }

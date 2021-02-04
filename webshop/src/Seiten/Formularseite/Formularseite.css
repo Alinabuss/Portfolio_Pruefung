@@ -1,20 +1,20 @@
 .grid-container_Formular {
     background: beige;
     display: grid;
-    grid-template-columns: 66vw 24vw 10vw;
+    grid-template-columns: 66vw 22vw 10vw;
     grid-template-rows: 10vh 10vh 40vh 40vh;
     gap: 0px 5px;
     grid-template-areas:
       "Überschrift Überschrift Button"
-      "Produktübersicht . ."
-      ". Preise Preise"
-      ". Preise Preise";
+      "Produktübersicht  . ."
+      ". Preise Preise "
+      ". Preise Preise ";
   }
 .Überschrift_Formular {
     background: grey;  
     text-align: center;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2; 
     margin: 10px;
@@ -76,7 +76,15 @@
 
 .Preise_Formular {
     background: beige;  
-    grid-area: Preise; 
+    grid-area: Preise;
     margin: 20px;
+    width: 15vw;
+    grid-template-columns: 12vw 7vw;
 }
+
+.spacer {
+  padding-top: 20px;
+}
+
+
 

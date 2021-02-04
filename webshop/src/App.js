@@ -24,7 +24,7 @@ function App() {
         )
       );
     } else {
-      setCartItems([...cartItems, {...Produkt, qty: parseInt(Menge)}])
+      setCartItems([...cartItems, {...Produkt, qty: (Menge? Menge : 1)}])
     }
   };
 
@@ -39,11 +39,15 @@ function App() {
 
   const Minus = (Produkt) => {
     const exist = cartItems.find((x) => x.id === Produkt.id);
+    if (exist.qty <= 1){
+      setCartItems(cartItems.filter((x) => x.id !== Produkt.id));
+    } else {
       setCartItems(
         cartItems.map((x) =>
         x.id === Produkt.id ? { ...exist, qty: parseInt(exist.qty)-parseInt(1) } : x
         )
       );
+    } 
   };
 
   const Löschen = (Produkt) => {
@@ -53,9 +57,9 @@ function App() {
 
   return (
     <Router>
-      <Route path='/' exact component = {(props) => <Startseite {...props} WarenkorbHinzufügen={WarenkorbHinzufügen}/> }/>
+      <Route path='/' exact component = {(props) => <Startseite {...props} countCartItems={cartItems.length} WarenkorbHinzufügen={WarenkorbHinzufügen}/> }/>
       <Route path='/Warenkorbseite' exact component = {(props) => <Warenkorbseite {...props} Löschen={Löschen} Plus={Plus} Minus = {Minus} cartItems={cartItems}/>}/>
-      <Route path='/Formularseite' exact component = {Formularseite}/>
+      <Route path='/Formularseite' exact component = {(props) => <Formularseite {...props} cartItems={cartItems}/>}/>
       <Route path='/Bestaetigungsseite' exact component = {Bestaetigungsseite}/>
     </Router>
   );

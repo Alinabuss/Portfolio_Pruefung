@@ -11,6 +11,9 @@ import { render } from 'react-dom';
 
 class Formularseite extends React.Component {
   render() {
+    const {cartItems, Löschen, Plus, Minus} = this.props;
+    const TotalPrice = cartItems.reduce((a,c) => a+c.Preis*c.qty,0);
+
     return (
         <div className="Formularseite">
           <div class="grid-container_Formular">
@@ -33,14 +36,31 @@ class Formularseite extends React.Component {
 
                     <div class="Preise_Formular">
                         <div class="item"><h2>Preisübersicht</h2></div>
-                        <div class="item">Preis1</div>
-                        <div class="item">Preis2</div>
-                        <div class="item">Preis3</div>
-                        <div class="item">Gesamtpreis</div>
-                        <div class="item">
-                          <NavLink to="/Bestaetigungsseite"><button class="button_Standard">Jetzt kaufen</button></NavLink>
-                        </div>
-                    </div>
+
+
+                          {cartItems.map((item) => (
+                            <>
+                            <div>{item.Titel}: {item.qty} * {item.Preis}€ = {item.qty * item.Preis}€</div>
+                            
+                            </>
+                          ))}
+
+                          {cartItems.length !==0 && (
+                          <> 
+                            <hr></hr>
+                            <div><strong>Gesamtpreis:  {TotalPrice}€ </strong></div>
+                          </>
+                          )}
+  
+                         <div class="spacer">
+                            <NavLink to="/Bestaetigungsseite"><button class="button_Standard">Jetzt kaufen</button></NavLink>
+                          </div>  
+                        
+                       
+                    </div>  
+
+                   
+                        
 
                 </div>  
         </div>
