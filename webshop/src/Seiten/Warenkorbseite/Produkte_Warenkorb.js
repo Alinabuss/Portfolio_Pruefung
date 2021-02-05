@@ -1,6 +1,10 @@
 import React from 'react';
 
-function Warenkorb_func(key, Produkt, cartItems, Minus, Plus, Löschen){
+// Definition der Funktion "Warenkorb_Func", die die Anordnung der WarenkorbEinträge Bild, Titel, Beschreibung und Menge
+// konkretisiert mithilfe der "Warenkorbseite.css", sowie die Warenkorbfunktionalitäten Plus, Minus und Löschen einbettet
+
+
+function Warenkorb_func(key, Produkt, Minus, Plus, Löschen){
     return(
     <div key={Produkt.id}>
     <div class="item Bild_Warenkorb">
@@ -13,7 +17,7 @@ function Warenkorb_func(key, Produkt, cartItems, Minus, Plus, Löschen){
         <div class="item">Menge:</div>
         
         <div class="item"><button class="button_X"  onClick={() => Minus(Produkt)}>-</button></div>
-        <div class="item"><div>{Produkt.qty}</div></div>
+        <div class="item"><div>{Produkt.MengeWarenkorb}</div></div>
         <div class="item"><button class="button_X"  onClick={() => Plus(Produkt)}>+</button></div>
         <div class="item"><button class="button_X"  onClick={() => Löschen(Produkt)}>X</button></div>
         </div>
@@ -22,14 +26,17 @@ function Warenkorb_func(key, Produkt, cartItems, Minus, Plus, Löschen){
         </div>)
 }
 
+// die Klasse "Produkte_Warenkorb" mapt die übergebene WarenkorbEinträge auf die Funktion "Warenkorb_Func", 
+// um für jeden Eintrag ein einzelnes Feld zu erstellen
+
 class Produkte_Warenkorb extends React.Component {
     render() {
         return(
             <div>
                 <div class="Produktübersicht_Warenkorb"><h2>Produktübersicht</h2></div>
             <div class="Produkte_Warenkorb">
-              <div>{this.props.cartItems.length===0 && <div>Warenkorb ist leer</div>}</div>
-              {this.props.cartItems.map((item) => (
+              <div>{this.props.WarenkorbEintraege.length===0 && <div>Warenkorb ist leer</div>}</div>
+              {this.props.WarenkorbEintraege.map((item) => (
                    Warenkorb_func(item.id, item, this.props.Minus, this.props.Plus, this.props.Löschen)
               ) )}
             </div>

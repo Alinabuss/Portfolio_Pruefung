@@ -6,66 +6,69 @@ import Bestaetigungsseite from './Seiten/Bestaetigungsseite/Bestaetigungsseite';
 import Formularseite from './Seiten/Formularseite/Formularseite'
 import Startseite from './Seiten/Startseite/Startseite'
 import Warenkorbseite from './Seiten/Warenkorbseite/Warenkorbseite'
-import ProduktListe from './Seiten/Startseite/ProduktListe';
 
 
+// Definition der App im Allgemeinen
 
 function App() {
-  const {Produkt} = ProduktListe;
-  const [cartItems, setCartItems] = useState([]);
+
+// Definition von den Funktionen WarenkorbEintraege, setWarenkorbEintraege, WarenkorbHinzufügen, Plus, Minus, Löschen und AllesLöschen, um alle 
+// Funktionalitäten für den Warenkorb verfügbar zu machen
+  const [WarenkorbEintraege, setWarenkorbEintraege] = useState([]);
   const WarenkorbHinzufügen = (Produkt) => {
-    const exist = cartItems.find((x) => x.id === Produkt.id);
+    const exist = WarenkorbEintraege.find((x) => x.id === Produkt.id);
     let Menge = document.getElementById(Produkt.Titel).value;
     console.log(Menge);
     if (exist){
-      setCartItems(
-        cartItems.map((x) =>
-        x.id === Produkt.id ? { ...exist, qty: parseInt(exist.qty)+parseInt(Menge? Menge : 1) } : x
+      setWarenkorbEintraege(
+        WarenkorbEintraege.map((x) =>
+        x.id === Produkt.id ? { ...exist, MengeWarenkorb: parseInt(exist.MengeWarenkorb)+parseInt(Menge? Menge : 1) } : x
         )
       );
     } else {
-      setCartItems([...cartItems, {...Produkt, qty: (Menge? Menge : 1)}])
+      setWarenkorbEintraege([...WarenkorbEintraege, {...Produkt, MengeWarenkorb: (Menge? Menge : 1)}])
     }
   };
 
   const Plus = (Produkt) => {
-    const exist = cartItems.find((x) => x.id === Produkt.id);
-      setCartItems(
-        cartItems.map((x) =>
-        x.id === Produkt.id ? { ...exist, qty: parseInt(exist.qty)+parseInt(1) } : x
+    const exist = WarenkorbEintraege.find((x) => x.id === Produkt.id);
+      setWarenkorbEintraege(
+        WarenkorbEintraege.map((x) =>
+        x.id === Produkt.id ? { ...exist, MengeWarenkorb: parseInt(exist.MengeWarenkorb)+parseInt(1) } : x
         )
       );
   };
 
   const Minus = (Produkt) => {
-    const exist = cartItems.find((x) => x.id === Produkt.id);
-    if (exist.qty <= 1){
-      setCartItems(cartItems.filter((x) => x.id !== Produkt.id));
+    const exist = WarenkorbEintraege.find((x) => x.id === Produkt.id);
+    if (exist.MengeWarenkorb <= 1){
+      setWarenkorbEintraege(WarenkorbEintraege.filter((x) => x.id !== Produkt.id));
     } else {
-      setCartItems(
-        cartItems.map((x) =>
-        x.id === Produkt.id ? { ...exist, qty: parseInt(exist.qty)-parseInt(1) } : x
+      setWarenkorbEintraege(
+        WarenkorbEintraege.map((x) =>
+        x.id === Produkt.id ? { ...exist, MengeWarenkorb: parseInt(exist.MengeWarenkorb)-parseInt(1) } : x
         )
       );
     } 
   };
 
-  const Löschen = (Produkt) => {
-    const exist = cartItems.find((x) => x.id === Produkt.id);
-    setCartItems(cartItems.filter((x) => x.id !== Produkt.id));
+const Löschen = (Produkt) => {
+    const exist = WarenkorbEintraege.find((x) => x.id === Produkt.id);
+    setWarenkorbEintraege(WarenkorbEintraege.filter((x) => x.id !== Produkt.id));
   }
 
 const AllesLöschen = () => {
-  setCartItems(cartItems.filter((x) => x.id !== x.id))
+  setWarenkorbEintraege(WarenkorbEintraege.filter((x) => x.id !== x.id))
 }
  
-
+// Definition vom Routing zwischen den Seiten Startseite, Warenkorbseite, Formularseite und Bestätigungsseite, sowie die Übergabe der
+// notwendigen Props an die entsprechenden Unterseiten
   return (
     <div class="App">
     <Router>
-      <Route path='/' exact component = {(props) => <Startseite {...props} countCartItems={cartItems.length} WarenkorbHinzufügen={WarenkorbHinzufügen}/> }/>
-      <Route path='/Warenkorbseite' exact component = {(props) => <Warenkorbseite {...props} Löschen={Löschen} Plus={Plus} Minus = {Minus} cartItems={cartItems}/>}/>
-      <Route path='/Formularseite' exact component = {(props) => <Formularseite {...props} cartItems={cartItems} AllesLöschen={AllesLöschen}/>}/>
+      <Route path='/' exact component = {(props) => <Startseite {...props} countWarenkorbEintraege={WarenkorbEintraege.length} WarenkorbHinzufügen={WarenkorbHinzufügen}/> }/>
+      <Route path='/Warenkorbseite' exact component = {(props) => <Warenkorbseite {...props} Löschen={Löschen} Plus={Plus} Minus = {Minus} WarenkorbEintraege={WarenkorbEintraege}/>}/>
+      <Route path='/Formularseite' exact component = {(props) => <Formularseite {...props} WarenkorbEintraege={WarenkorbEintraege} AllesLöschen={AllesLöschen}/>}/>
       <Route path='/Bestaetigungsseite' exact component = {Bestaetigungsseite}/>
     </Router>
     </div>

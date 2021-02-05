@@ -10,7 +10,7 @@ import Porcheria from "./Produktbilder/Porcheria.jpg"
 import Urbulle from "./Produktbilder/Urbulle.jpg"
 import Burgunder from "./Produktbilder/Weisser_Burgunder.jpg"
 
-
+// Definition aller vorhandenen Produkte mit ID, Titel, Beschreibung und Bildern, die aus dem Ordner "Produktbilder" importiert werden
 
 const ProduktListe = [
     {id: "1", Titel: "BLUTSBRUDER ROT", Beschreibung: "Wenn zwei Brüder in Winnetou-Old-Shatterhandartigem Einvernehmen in der ewigen Weite des Wonnegaus ein Weingut bewirtschaften, das echt und ehrlich Karl May heißt, dann muss es dort doch auch Weine Namens Blutsbruder geben.", Preis: 12 , Bild: Blutsbruder },

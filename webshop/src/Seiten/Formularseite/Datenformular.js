@@ -2,25 +2,8 @@ import React from 'react';
 import './Formularseite.css';
 import '../Seitenuebergreifende_Elemente/layout.css';
 
-
-
-
-function Dropdown(item){
-    if (item=="Girokarte"){
-        return(<option value = {item}>{item}</option>)
-    } else if (item=="Kreditkarte"){
-        return(<option value = {item}>{item}</option>)
-    } else if (item=="Paypal"){
-        return(<option value = {item}>{item}</option>)
-    } else if (item=="Auf Rechnung"){
-        return(<option value = {item}>{item}</option>)
-    } else if (item=="Sofort-Überweisung") {
-        return(<option value = {item}>{item}</option>)
-    } else {
-      return(<option disabled hidden selected>Bitte wählen</option>)
-    }
-}
-
+// Die Funktion "Daten" erhält die übergebenen Props aus der Klasse "Datenformular" und erstellt in Abhängigkeit von ihrem Inhalt 
+// eine Beschriftung, eine Input-Zeile oder ein Dropdown-Feld
 
 function Daten(item){
     if (item=="Text"){
@@ -29,7 +12,7 @@ function Daten(item){
       return(
       <div class="item">
       <select id="Datenformular">
-          {item.slice(1,).map(item =>Dropdown(item))}
+          {item.slice(1,).map(item =><option value = {item}>{item}</option>)}
       </select>
       </div>)
     } else {
@@ -37,6 +20,7 @@ function Daten(item){
     }
   };
 
+// Die einzelnen Felder werden der Klasse "Datenformular" übergeben, welche sie mithilfe der "Formularseite.css" richtig anordnet
   
 class Datenformular extends React.Component { 
 
@@ -50,10 +34,4 @@ class Datenformular extends React.Component {
     }
   }
   
-
-
-
-
-
-
 export default Datenformular

@@ -2,6 +2,8 @@ import React from 'react';
 import './Startseite.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 
+// Definition der Funktion "Produkt_Func", die die Anordnung der Produktelemente Bild, Titel, Beschreibung, Menge und Inputfeld 
+// konkretisiert mithilfe der "Startseite.css", sowie die Warenkorbfunktionalitäten WarenkorbHinzufügen einbettet
 
 function Produkt_Func(key, Produkt, WarenkorbHinzufügen) {
     return(
@@ -24,6 +26,9 @@ function Produkt_Func(key, Produkt, WarenkorbHinzufügen) {
     </div>
     )
 }
+
+// die Klasse "Produkte_Startseite" mapt die übergebene ProduktListe auf die Funktion "Produkt_Func", 
+// um für jedes Produkt ein einzelnes Feld zu erstellen
 
 class Produkte_Startseite extends React.Component {
     render() { 

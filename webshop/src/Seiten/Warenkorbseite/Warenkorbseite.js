@@ -8,13 +8,18 @@ import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import Überschrift from '../Seitenuebergreifende_Elemente/Überschrift';
 import Produkte_Warenkorb from './Produkte_Warenkorb';
 
+// Definition der Warenkorbseite im Allgemeinenen
 
 class Warenkorbseite extends React.Component {
   
     render( ) {
-      const {cartItems, Löschen, Plus, Minus} = this.props;
+    // Unpacking der notwendigen Props
+      const {WarenkorbEintraege, Löschen, Plus, Minus} = this.props;
       
         return (
+        // Definition der Elemente Überschrift und Button mithilfe der seitenübergreifenden Elementen
+        // WarenkorbEintraege sowie notwendige Funktionen werden an die Klasse Produkte_Warenkorb übergeben, um diese auszugeben 
+        // Preise werden durch die Klasse "Preise" generiert, an welche die Warenkorbeinträge übergeben werden
             <div className="Warenkorbseite">
                  <div class="grid-container_Warenkorb">
                     <Überschrift Text= "Ihr Warenkorb"/>
@@ -22,9 +27,9 @@ class Warenkorbseite extends React.Component {
                         <NavLink to="/"><button class="button button_Überschrift">Weiter shoppen</button></NavLink>
                     </div>
                   
-                    <Produkte_Warenkorb cartItems={cartItems} Minus={Minus} Plus={Plus} Löschen={Löschen}/>
+                    <Produkte_Warenkorb WarenkorbEintraege={WarenkorbEintraege} Minus={Minus} Plus={Plus} Löschen={Löschen}/>
                     <div class="Balken"/>
-                    <Preise cartItems={cartItems}/>
+                    <Preise WarenkorbEintraege={WarenkorbEintraege}/>
                 </div>            
             </div>
           );

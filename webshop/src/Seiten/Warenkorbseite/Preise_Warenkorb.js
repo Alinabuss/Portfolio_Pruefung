@@ -4,13 +4,16 @@ import '../Seitenuebergreifende_Elemente/layout.css'
 import Preisberechnung from '../Seitenuebergreifende_Elemente/Preise'
 import './Warenkorbseite.css'
 
+
+// Klasse Preise gibt die Warenkorbeinträge weiter an die Klasse Preisberechnung aus den seitenübergreifenden Elemente
+// Ein Button mit der Weiterleitung an die Formularseite wird erstellt
+
 class Preise extends React.Component {
     render(){
-        const Gesamtpreis = this.props.cartItems.reduce((a,c) => a+c.Preis*c.qty,0);
         return(<div>
-                <Preisberechnung cartItems={this.props.cartItems}/>
+                <Preisberechnung WarenkorbEintraege={this.props.WarenkorbEintraege}/>
 
-                {this.props.cartItems.length !==0 && (
+                {this.props.WarenkorbEintraege.length !==0 && (
                 <> 
                     
                     <div class="spacer">

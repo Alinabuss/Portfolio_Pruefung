@@ -4,9 +4,12 @@ import '../Seitenuebergreifende_Elemente/layout.css';
 import {BrowserRouter as Router, Route, NavLink} from "react-router-dom";
 import Überschrift from '../Seitenuebergreifende_Elemente/Überschrift';
 
+// Definition der Formularseite im Allgemeinenen
+
 class Bestaetigungsseite extends React.Component {
     render() {
         return (
+            // Definition der Element Überschrift, Bild und Button mithilfe der seitenübergreifenden Elemente
             <div className="Bestaetigungsseite">
                 <div class="grid-container_Bestaetigung">
                     <Überschrift Text="Transaktion erfolgreich!"/>
