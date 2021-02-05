@@ -16,8 +16,6 @@ class Preise extends React.Component {
                     </div>  
                 </>
                 )}
-                
-
                 </div>
                 
         )

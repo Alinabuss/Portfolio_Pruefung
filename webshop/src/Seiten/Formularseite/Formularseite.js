@@ -28,7 +28,8 @@ class Formularseite extends React.Component {
 
                     
                     <Datenformular Bezeichnungen={["Name","Text", "Vorname","Text", "Adresse","Text", "Telefonnummer","Text", 
-                    "Zahlungsmittel", ["Dropdown","Anfang", "Girokarte", "Kreditkarte", "Paypal", "Auf Rechnung", "Sofort-Überweisung"]]}/>
+                    "Zahlungsmittel", ["Dropdown","Anfang", "Girokarte", "Kreditkarte", "Paypal", "Auf Rechnung", "Sofort-Überweisung"], 
+                    "Karteninhaber", "Text", "IBAN", "Text", "BIC", "Text"]}/>
               
                     <div class = "Balken"/>
                     <Preise cartItems={cartItems} AllesLöschen={AllesLöschen}/>

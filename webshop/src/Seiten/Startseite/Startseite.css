@@ -4,7 +4,7 @@
     width: 98vw;
     gap: 0px 5px;
     grid-template-columns: 88vw 10vw;
-    grid-template-rows: 10vh 10vh 80vh;
+    grid-template-rows: 10vh 10vh 450vh;
     grid-template-areas:
       "Überschrift Button"
       "Beschreibung Beschreibung"

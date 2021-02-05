@@ -2,14 +2,14 @@
     background: beige;
     display: grid;
     grid-template-columns: 66vw 22vw 10vw;
-    grid-template-rows: 10vh 10vh 10vh 20vh 40vh;
+    grid-template-rows: 10vh 10vh 10vh 80vh;
     gap: 0px 5px;
     grid-template-areas:
     "Überschrift Überschrift Button"
     "Produktübersicht  . ."
     ". Preisübersicht ."
     ". Preise Preise "
-    ". . .";
+    ". Preise Preise";
   }
 
 .Button_Warenkorb { 

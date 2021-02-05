@@ -21,12 +21,10 @@ class Warenkorbseite extends React.Component {
                     <div class="Button_Warenkorb">
                         <NavLink to="/"><button class="button button_Überschrift">Weiter shoppen</button></NavLink>
                     </div>
-                   
+                  
                     <Produkte_Warenkorb cartItems={cartItems} Minus={Minus} Plus={Plus} Löschen={Löschen}/>
                     <div class="Balken"/>
                     <Preise cartItems={cartItems}/>
-                   
-
                 </div>            
             </div>
           );

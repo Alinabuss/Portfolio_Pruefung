@@ -2,6 +2,9 @@ import React from 'react';
 import './Formularseite.css';
 import '../Seitenuebergreifende_Elemente/layout.css';
 
+
+
+
 function Dropdown(item){
     if (item=="Girokarte"){
         return(<option value = {item}>{item}</option>)
@@ -12,16 +15,10 @@ function Dropdown(item){
     } else if (item=="Auf Rechnung"){
         return(<option value = {item}>{item}</option>)
     } else if (item=="Sofort-Überweisung") {
-        return(<option value = {item}>{item}</option>)}
-    // } else {
-    //     return(<option disabled hidden selected>Select</option>)
-    // }
-}
-
-function singleSelectChangeValue() {
-  var selObj = document.getElementById("singleSelectValueDDJS");
-  var selValue = selObj.options[selObj.selectedIndex].value;
-  document.getElementById("textFieldValueJS").value = selValue;
+        return(<option value = {item}>{item}</option>)
+    } else {
+      return(<option disabled hidden selected>Bitte wählen</option>)
+    }
 }
 
 
@@ -31,7 +28,7 @@ function Daten(item){
     } else if (item[0]=="Dropdown") {
       return(
       <div class="item">
-      <select id="singleSelectValueDDJS" class="form-control">
+      <select id="Datenformular">
           {item.slice(1,).map(item =>Dropdown(item))}
       </select>
       </div>)
@@ -39,6 +36,7 @@ function Daten(item){
       return(<div class="item">{item}:</div>)
     }
   };
+
   
 class Datenformular extends React.Component { 
 
@@ -56,11 +54,6 @@ class Datenformular extends React.Component {
 
 
 
-// <div class="item">Karteninhaber:</div>
-//                 <div class="item"><input type="text" size="80"></input></div>
-//                 <div class="item">IBAN:</div>
-//                 <div class="item"><input type="text" size="80"></input></div>
-//                 <div class="item">BIC:</div>
-//                 <div class="item"><input type="text" size="80"></input></div>
+
 
 export default Datenformular
