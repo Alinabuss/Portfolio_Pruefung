@@ -14,8 +14,8 @@ import Preise from './Preise_Formular'
 
 class Formularseite extends React.Component {
   render() {
-    const {cartItems} = this.props;
-    const TotalPrice = cartItems.reduce((a,c) => a+c.Preis*c.qty,0);
+    const {cartItems, AllesLöschen} = this.props;
+  
 
     return (
         <div className="Formularseite">
@@ -31,7 +31,7 @@ class Formularseite extends React.Component {
                     "Zahlungsmittel", ["Dropdown","Anfang", "Girokarte", "Kreditkarte", "Paypal", "Auf Rechnung", "Sofort-Überweisung"]]}/>
               
                     <div class = "Balken"/>
-                    <Preise cartItems={cartItems}/>
+                    <Preise cartItems={cartItems} AllesLöschen={AllesLöschen}/>
 
                         
                 </div>  

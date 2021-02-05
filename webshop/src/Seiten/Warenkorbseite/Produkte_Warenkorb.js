@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Warenkorb_func(key, Produkt, Minus, Plus, Löschen){
+function Warenkorb_func(key, Produkt, cartItems, Minus, Plus, Löschen){
     return(
     <div key={Produkt.id}>
     <div class="item Bild_Warenkorb">

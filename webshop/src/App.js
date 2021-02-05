@@ -55,14 +55,22 @@ function App() {
     setCartItems(cartItems.filter((x) => x.id !== Produkt.id));
   }
 
+const AllesLöschen = () => {
+  setCartItems(cartItems.filter((x) => x.id !== x.id))
+}
+ 
+
   return (
+    <div class="App">
     <Router>
       <Route path='/' exact component = {(props) => <Startseite {...props} countCartItems={cartItems.length} WarenkorbHinzufügen={WarenkorbHinzufügen}/> }/>
       <Route path='/Warenkorbseite' exact component = {(props) => <Warenkorbseite {...props} Löschen={Löschen} Plus={Plus} Minus = {Minus} cartItems={cartItems}/>}/>
-      <Route path='/Formularseite' exact component = {(props) => <Formularseite {...props} cartItems={cartItems}/>}/>
+      <Route path='/Formularseite' exact component = {(props) => <Formularseite {...props} cartItems={cartItems} AllesLöschen={AllesLöschen}/>}/>
       <Route path='/Bestaetigungsseite' exact component = {Bestaetigungsseite}/>
     </Router>
-  );
+    </div>
+ 
+ );
 }
 
 export default App;

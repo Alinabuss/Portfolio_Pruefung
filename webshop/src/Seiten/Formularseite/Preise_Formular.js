@@ -12,7 +12,7 @@ class Preise extends React.Component {
                 {this.props.cartItems.length !==0 && (
                 <>                     
                     <div class="spacer">
-                    <NavLink to="/Bestaetigungsseite"><button class="button_Standard">Jetzt kaufen</button></NavLink>
+                    <NavLink to="/Bestaetigungsseite"><button class="button_Standard" onClick={() => this.props.AllesLöschen()} >Jetzt kaufen</button></NavLink>
                     </div>  
                 </>
                 )}

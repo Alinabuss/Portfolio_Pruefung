@@ -1,10 +1,10 @@
 .grid-container_Start {
     background: beige;
     display: grid;
-    width: 100.5vw;
-    grid-template-columns: 90vw 10vw;
-    grid-template-rows: 10vh 10vh 80vh;
+    width: 98vw;
     gap: 0px 5px;
+    grid-template-columns: 88vw 10vw;
+    grid-template-rows: 10vh 10vh 80vh;
     grid-template-areas:
       "Überschrift Button"
       "Beschreibung Beschreibung"
@@ -26,6 +26,7 @@
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    width: 95vw;
 }
 
 
@@ -48,7 +49,8 @@
     height: 300px;
     grid-gap: 5px;
     padding-left: 20px;
-    grid-template-columns: 15vw 85vw;
+    width: 95vw;
+    grid-template-columns: 15vw 80vw;
     margin: 20px;
   }
 
@@ -57,6 +59,7 @@
     font-size: 18px;
     background: beige;
     height: 300px;
+    width: 65vw;
 }
 
 .Menge_Start {
